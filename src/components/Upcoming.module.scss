@@ -1,0 +1,42 @@
+.upMovieWrap{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+ 
+    .upMovie{
+   
+ 
+     .upBackImg{
+         width: 100%;
+         height: 90vh;
+         img{
+            width: 100%;
+            height: 100%;
+            
+         }
+     }
+     .upInfo{
+         img{
+             position: absolute;
+            bottom: -30px;
+            left: 80px;
+            box-shadow: 0 0 10px #000;
+         }
+     }
+     .upInfoText{
+         position: absolute;
+         bottom: 70px;
+         left: 400px;
+         .upTitle{
+             font-size: 30px;
+             color: #fff;
+             text-shadow: 2px 2px 0 #000;
+         }
+         .upRelease{
+             font-size: 14px;
+             color: #fff;
+             text-shadow: 2px 2px 0 #000;
+         }
+     }
+    }
+ }

@@ -1,0 +1,205 @@
+.App{
+    nav{
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        z-index: 2;
+        box-sizing: border-box;
+        .logo{
+            font-size: 50px;
+            a{
+                color: #fff;
+            }
+           
+        }
+        >ul{
+            display: flex;
+            list-style: none;
+            >li{
+                >a{
+                    display: inline-block;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #fff;
+                    font-size: 18px;
+                    text-shadow: 2px 2px 0 #111;
+                }
+                &:last-child a{padding-right: 0;}
+            }
+        }
+    }
+    /* .pt80{
+        padding: 80px 50px 0;
+    } */
+   /*  .pt30{
+        padding-top: 30px;
+    } */
+    .strongText{
+        font-weight: bold;
+        font-size: 14px;
+        color: palevioletred;
+    }
+    .errText{
+        font-size: 12px;
+        color: palevioletred;
+        margin-bottom: 5px;
+    }
+    .flw{
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap; 
+    }
+    .homeWrap{
+        /* padding-top: 80px; */
+
+        .homeTitle{
+            border-bottom: 5px double #ddd;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .loading{text-align: center; font-size: 30px;}
+        .amovieWrap{
+            width: 340px;
+            height: 500px;
+            background: #fff;
+            border-radius: 40px 0;
+            box-shadow: 2px 2px 10px #000;
+            margin: 20px;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+            a{
+                text-decoration: none;
+                color: #222;
+                h2{font-size: 20px; color: #bbb;}
+                img{width: 75%;}
+                .date{text-align: left; margin-left: 30px;}
+                .average{text-align: left;margin-left: 30px;}
+            }
+        }
+        .moreBtn{
+            text-align: center;
+            padding: 70px 0;
+            button{
+                background: #fff;
+                padding: 10px 30px;
+                border: 2px solid #ddd;
+            }
+        }
+    }
+    .aboutWrap{
+        background: #000;
+        height: 100%;
+        .aboutuser{
+            .box{
+                width: 100%;
+                text-align: center;
+                position: relative;
+                img{width: 40%; padding-top: 80px;}
+                .overAndaverage{
+                    position: absolute;
+                    top: 300px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #222;
+                    text-align: left;
+                    line-height: 180%;
+                    width: 40%;
+                    padding: 30px;
+                    box-sizing: border-box;
+                    background: rgba(255,255,255,.6);
+                    .average{color: #f00; padding-top: 50px; font-weight: bold;}
+                }
+            }
+        }
+    }
+    .moviesWrap{
+        padding: 80px 50px;
+        h2{}
+        h3{text-shadow: 2px 2px 0 #ccc;}
+        .movie{
+            display: flex;
+            align-items: center;
+            justify-content:  space-between; border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            .movie-title{
+                font-weight: bold;
+                flex-grow: 1;
+                .movie-year{
+                    font-size: .8rem;
+                    color: pink;
+                    font-weight: normal;
+                    padding-left: 10px;
+                }
+            }
+            div>button{
+                border: none;
+                background: pink;
+                color: #fff;
+                padding: 5px 10px;
+            }
+        }
+        form{
+            padding: 10px 0;
+            input{width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ddd; margin-bottom: 5px;}
+            button{
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                border: none;
+                background: pink;
+                color: #fff;
+            }
+        }
+    }
+    .usersWrap{
+        padding: 80px 50px;
+        h2{}
+        .card{
+            margin-bottom: 10px;
+          .card-body{
+            background: #ddd;
+            padding: 30px;
+            box-sizing: border-box;
+            a{
+                text-decoration: none;
+                color: #222;
+            }
+          }  
+        }
+    }
+    .userWrap{
+        padding: 80px 50px;
+        .userDdetail{
+            border: 5px solid #ddd;
+            padding: 30px;
+            box-sizing: border-box;
+            div{
+                line-height: 200%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:998px) {
+    .APP{
+        .homeWrap{
+            .Upcoming_upMovieWrap{
+                .Upcoming_upInfo{
+                    img{
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
